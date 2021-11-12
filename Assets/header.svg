@@ -1,0 +1,78 @@
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 8em;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: 99999px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear;
+}
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+}
+
+@keyframes crawl {
+  0% {
+    top: -100px;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+  100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+			</style>
+<body>
+<section class="star-wars">
+  <div class="crawl">
+    <div class="title">
+      <p>Colle III</p>
+      <h1>C3PO</h1>
+    </div>
+    
+    <p>La République Epitech est en pleine ébullition. Confrontés à ce mouvement de piscine mené par le Comte Kaben, les Chevaliers W@C, en nombre limité, ont du mal à maintenir la paix et l'ordre à la Web@cadémie.</p>
+
+	<p>C'est alors que le Pédago Franck, ancien PGE d'Epitech, prends la décision de lancer les Chevaliers W@C sur la création d'une Armée de robots C3PO en PHP dans l'objectif de ramener le calme à la Web@cadémie....</p>
+
+  </div>
+</section></body>
+
+		</div>
+	</foreignObject>
+</svg>
